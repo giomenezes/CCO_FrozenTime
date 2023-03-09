@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação</title>
+    <link rel="stylesheet" href="calculoStyle.css">
+
+</head>
+
+<body>
+    <div id="div_mãe" class="mae">
+        <div id="div_left" class="left">
+            <h1 class="titulo"> Simule seus lucros com a Frozen Time! </h1>
+            <h3> Calcule o seu futuro lucro como cliente Frozen Time! </h3>
+        </div>
+
+        
+        <div id="div_right" class="right">
+                    <div id="div_textos">
+                    Para saber quantos sensores serão necessários para aumentar seus lucros, <b> insira a quantidade de receita que a sua empresa gera, atualmente:</b> <br> <input id="ipt_lucros" placeholder="Lucros atuais"> <br> <br>
+
+                    Segundo pesquisas da Anvisa, cerca de 43% dos medicamentos transportados não conseguem manter a temperatura ideal, ocasionando uma diminuição da sua eficácia. Por isso, <b>Prejuízo por causa de medicamentos com baixa eficácia:</b> <br> <input id="ipt_percas" placeholder="Prejuízo em transporte">
+                    <br> <br> 
+                    </div>
+                    <button onclick="exibirLucros()" id="button"><b>Descubra seus lucros!</b></button>
+                    <div id="div_msg"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function exibirLucros() {
+        var perca = ipt_lucros.value * 0.43;
+        var lucros = perca * 0.75;
+        div_msg.innerHTML = `<br> <br> Com base nas pesquisas feitas, você já perdeu cerca de R$<b>${perca}</b>. Com os nossos sensores, você consegue aumentar seus lucros em <b> ${lucros}% </b>, aumentando a eficácia dos seus produtos em transporte.`
+    }
+
+</script>

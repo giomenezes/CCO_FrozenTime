@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    color: deepskyblue;
+    font-style:initial;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.mae {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    background-color: rgb(160, 209, 255);
+    justify-content: center;
+    flex-direction:column;
+    gap: 30px;
+}
+
+.right {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    background-color: rgb(108, 165, 240);
+    justify-content: center;
+    flex-direction:column;
+    gap: 10px;
+}
+
+#div_textos {
+    display: block;
+    padding: 30px 50px;
+    justify-content: center;
+}
+
+#ipt_percas {
+    display: flexbox;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    color: navy;
+}
+
+#ipt_lucros {
+    display: flexbox;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    color: navy;
+}
+
+#button {
+    display: block;
+    width: 250px;
+    height: 50px;
+    background-color: deepskyblue;
+    color: aliceblue;
+    border-radius: 5px;
+    border-color: rgb(108, 165, 240);
+}
+
+#div_msg {
+    float:inherit;
+    display: block;
+    width: 50%;
+    height: 25%;
+    padding: 6px;
+    background-color:aliceblue;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-color: rgb(108, 165, 240)
+}
